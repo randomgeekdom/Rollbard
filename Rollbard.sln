@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.ApiService", "Roll
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.Web", "Rollbard.Web\Rollbard.Web.csproj", "{5BA9B64B-D1E3-448B-B339-38A470A09B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rollbard.Worldbuilding", "Rollbard.Worldbuilding\Rollbard.Worldbuilding.csproj", "{983FC013-3063-4AF8-9F43-A810245158E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rollbard.Models", "Rollbard.Models\Rollbard.Models.csproj", "{E4CE9F50-7EA9-40F6-9DEC-E9C9598B7C6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{983FC013-3063-4AF8-9F43-A810245158E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{983FC013-3063-4AF8-9F43-A810245158E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{983FC013-3063-4AF8-9F43-A810245158E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{983FC013-3063-4AF8-9F43-A810245158E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4CE9F50-7EA9-40F6-9DEC-E9C9598B7C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CE9F50-7EA9-40F6-9DEC-E9C9598B7C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CE9F50-7EA9-40F6-9DEC-E9C9598B7C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CE9F50-7EA9-40F6-9DEC-E9C9598B7C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
