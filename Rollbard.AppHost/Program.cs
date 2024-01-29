@@ -8,6 +8,4 @@ builder.AddProject<Projects.Rollbard_Web>("webfrontend")
     .WithReference(cache)
     .WithReference(apiservice);
 
-builder.AddProject<Projects.Rollbard_Worldbuilding>("worldbuilding");
-
 builder.Build().Run();
