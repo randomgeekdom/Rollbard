@@ -1,0 +1,31 @@
+﻿@using Rollbard.Library.Models
+@using Rollbard.Library.Rollers.Interfaces
+@inject ICharacterRoller characterRoller;
+
+@page "/character-roller"
+
+
+<h3>Character Roller</h3>
+<button class="btn btn-primary" @onclick="()=>Roll()">Roll</button>
+<p>Name: @character?.Name</p>
+<p>Gender: @character?.Gender</p>
+<p>Species: @character?.Species?.Name</p>
+<p>Job: @character?.Job</p>
+<p>Hometown: @character?.Hometown</p>
+
+
+
+@code {
+    Character? character;
+
+    protected override void OnInitialized()
+    {
+        Roll();
+    }
+
+    void Roll()
+    {
+        this.character = this.characterRoller.Get();
+        StateHasChanged();
+    }
+}

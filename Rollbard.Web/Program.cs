@@ -8,10 +8,16 @@ builder.AddServiceDefaults();
 builder.AddRedisOutputCache("cache");
 
 // Add services to the container.
+
+foreach (var service in Rollbard.Library.RegistrationDictionary.Get())
+{
+    builder.Services.AddTransient(service.Key, service.Value);
+}
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddHttpClient<WeatherApiClient>(client=> client.BaseAddress = new("http://apiservice"));
+builder.Services.AddHttpClient<WeatherApiClient>(client => client.BaseAddress = new("http://apiservice"));
 
 var app = builder.Build();
 
@@ -28,7 +34,7 @@ app.UseOutputCache();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
-    
+
 app.MapDefaultEndpoints();
 
 app.Run();
