@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Rollbard.ApiService\Rollbard.ApiService.csproj" />
     <ProjectReference Include="..\Rollbard.Web\Rollbard.Web.csproj" />
+    <ProjectReference Include="..\Rollbard.Worldbuilding\Rollbard.Worldbuilding.csproj" />
   </ItemGroup>
 
   <ItemGroup>

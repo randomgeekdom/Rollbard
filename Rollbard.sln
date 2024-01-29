@@ -2,13 +2,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34518.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rollbard.AppHost", "Rollbard.AppHost\Rollbard.AppHost.csproj", "{24BA1230-FBB2-4685-8061-3DCC369151B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.AppHost", "Rollbard.AppHost\Rollbard.AppHost.csproj", "{24BA1230-FBB2-4685-8061-3DCC369151B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.ServiceDefaults", "Rollbard.ServiceDefaults\Rollbard.ServiceDefaults.csproj", "{709B11DE-812A-4335-8C7E-E8805FD81626}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.ApiService", "Rollbard.ApiService\Rollbard.ApiService.csproj", "{31677029-C9D9-4DA4-A983-D781EC28FCFB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rollbard.Web", "Rollbard.Web\Rollbard.Web.csproj", "{5BA9B64B-D1E3-448B-B339-38A470A09B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rollbard.Worldbuilding", "Rollbard.Worldbuilding\Rollbard.Worldbuilding.csproj", "{983FC013-3063-4AF8-9F43-A810245158E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BA9B64B-D1E3-448B-B339-38A470A09B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983FC013-3063-4AF8-9F43-A810245158E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983FC013-3063-4AF8-9F43-A810245158E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983FC013-3063-4AF8-9F43-A810245158E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983FC013-3063-4AF8-9F43-A810245158E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

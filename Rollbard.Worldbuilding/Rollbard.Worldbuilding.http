@@ -1,0 +1,6 @@
+@Rollbard.Worldbuilding_HostAddress = http://localhost:5082
+
+GET {{Rollbard.Worldbuilding_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
