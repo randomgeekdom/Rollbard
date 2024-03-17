@@ -3,9 +3,6 @@ using Rollbard.Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add service defaults & Aspire components.
-builder.AddServiceDefaults();
-
 // Add services to the container.
 
 foreach (var service in Rollbard.Library.RegistrationDictionary.Get())
@@ -31,7 +28,5 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
-
-app.MapDefaultEndpoints();
 
 app.Run();
