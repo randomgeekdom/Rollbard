@@ -11,5 +11,9 @@
     <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.0-preview.2.23619.3" />
     <PackageReference Include="Rollbard.Library" Version="1.4.7" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\docs\" />
+  </ItemGroup>
   
 </Project>
