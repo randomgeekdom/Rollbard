@@ -1,0 +1,22 @@
+﻿@page "/character-roller2"
+
+<PageTitle>Character Roller</PageTitle>
+
+@using Rollbard.Library.Models
+@using Rollbard.Library.Rollers.Interfaces
+@inject ICharacterRoller characterRoller;
+
+@code {
+
+    private Character character { get; set; } = new Character();
+
+    protected override void OnInitialized()
+    {
+        Roll();
+    }
+
+    public void Roll()
+    {
+        this.character = this.characterRoller.Get();
+    }
+}

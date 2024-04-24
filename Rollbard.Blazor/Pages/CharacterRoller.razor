@@ -1,0 +1,39 @@
+﻿@page "/character-roller"
+
+<PageTitle>Character Roller</PageTitle>
+
+@using Rollbard.Library.Models
+@using Rollbard.Library.Rollers.Interfaces 
+@inject ICharacterRoller characterRoller;
+
+
+
+<h3>Character Roller</h3>
+<button class="btn btn-primary" @onclick="Roll">Roll</button>
+<p>Name: @character?.Name</p>
+<p>Gender: @character?.Gender</p>
+<p>Species: @character?.Species?.Name</p>
+<p>Job: @character?.Job</p>
+<p>Hometown: @character?.Hometown</p>
+
+@code{
+
+    private Character character { get; set; } = new Character();
+
+    protected override void OnInitialized()
+    {
+        Roll();
+    }
+
+    public void Roll()
+    {
+        var newCharacter = this.characterRoller.Get();
+        this.character.FirstName = newCharacter.FirstName;
+        this.character.LastName = newCharacter.LastName;
+        this.character.PersonalityTraits = newCharacter.PersonalityTraits.ToList();
+        this.character.Gender = newCharacter.Gender;
+        this.character.Hometown = newCharacter.Hometown;
+        this.character.Job = newCharacter.Job;
+        this.character.Species = newCharacter.Species;
+    }
+}
